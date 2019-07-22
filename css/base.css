@@ -380,7 +380,6 @@ a:focus {
 	padding: 2rem;
 	grid-area: 5 / 1 / span 1 / span 2;
 	color: var(--color-content);
-	width: 100vw;
 }
 
 .slide__back {
