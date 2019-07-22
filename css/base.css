@@ -16,7 +16,7 @@ html {
 body {
 	--color-text: #000;
 	--color-text-alt: #c0c0c0;
-	--color-bg: #ffb8b8;
+	--color-bg: #F94248;
 	--color-link: #000;
 	--color-link-hover: #000;
 	--color-slide-title: #fff;
@@ -303,7 +303,7 @@ a:focus {
 	margin: 0;
 	line-height: 1;
 	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-	font-weight: 400;
+	font-weight: 900;
 	font-style: normal;
 	letter-spacing: -0.25vw;
 	color: var(--color-slide-title);
@@ -401,6 +401,55 @@ a:focus {
 .slide--open .slide__figure--box  {
 	position: absolute;
 }
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #000;
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+    z-index: -101;
+  }
+  .overlay:target {
+    visibility: visible;
+    opacity: 1;
+    z-index: 101;
+  }
+  .pop__up {
+    padding: 100px;
+    background: #000;
+    border-radius: 5px;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    transition: all 5s ease-in-out;
+    overflow-y: hidden;
+  }
+  .pop__up .close svg {
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    fill-color: #fff;
+  }
+  .pop__up .close:hover {
+    fill-color: #fff;
+  }
+  .pop__up .content {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height: 80vh;
+    padding: 10vh 10vw;
+  }
+  .pop__up .content p,
+  .pop__up .content a {
+    color: #fff;
+  }
+
 
 @media screen and (min-width: 53em) {
 	*,
