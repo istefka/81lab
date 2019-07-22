@@ -376,10 +376,11 @@ a:focus {
 .slide__content {
 	opacity: 0;
 	font-size: 1.25rem;
-	text-align: justify;
-	padding: 2rem 0;
+	text-align: left;
+	padding: 2rem;
 	grid-area: 5 / 1 / span 1 / span 2;
 	color: var(--color-content);
+	width: 100vw;
 }
 
 .slide__back {
@@ -420,7 +421,7 @@ a:focus {
     z-index: 101;
   }
   .pop__up {
-    padding: 100px;
+    padding: 2rem;
     background: #000;
     border-radius: 5px;
     width: 100vw;
@@ -443,7 +444,7 @@ a:focus {
     overflow-x: hidden;
     overflow-y: hidden;
     height: 80vh;
-    padding: 10vh 10vw;
+    padding: 5rem;
   }
   .pop__up .content p,
   .pop__up .content a {
