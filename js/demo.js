@@ -1,13 +1,3 @@
-/**
- * demo.js
- * http://www.codrops.com
- *
- * Licensed under the MIT license.
- * http://www.opensource.org/licenses/mit-license.php
- * 
- * Copyright 2019, Codrops
- * http://www.codrops.com
- */
 {
     // Some help functions.
     const shuffleArray = arr => arr.sort(() => Math.random() - 0.5);
@@ -534,3 +524,14 @@
     // Preload all the images in the page.
     imagesLoaded(document.querySelectorAll('.slide__figure-img'), {background: true}, () => body.classList.remove('loading'));
 }
+
+/**
+ * demo.js
+ * http://www.codrops.com
+ *
+ * Licensed under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ * 
+ * Copyright 2019, Codrops
+ * http://www.codrops.com
+ */
