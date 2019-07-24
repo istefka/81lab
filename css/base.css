@@ -18,11 +18,11 @@ body {
 	--color-text-alt: #c0c0c0;
 	--color-bg: #F94248;
 	--color-link: #000;
-	--color-link-hover: #000;
+	--color-link-hover: #FCF172;
 	--color-slide-title: #fff;
 	--color-slide-text: #fff;
 	--color-arrow: #000;
-	--color-arrow-hover: #555;
+	--color-arrow-hover: #FCF172;
 	--color-content: #fff;
 	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
 	min-height: 100vh;
@@ -95,15 +95,21 @@ body {
 }
 
 
-a {
+a,
+button {
 	text-decoration: none;
 	color: var(--color-link);
 	outline: none;
+	background-color: transparent;
+	border: none;
 }
 
 a:hover,
-a:focus {
+a:focus,
+button:hover,
+button:focus {
 	color: var(--color-link-hover);
+	font-weight: bold;
 }
 
 button:focus,
