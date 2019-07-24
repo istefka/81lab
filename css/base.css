@@ -321,7 +321,7 @@ a:focus {
 	-webkit-text-stroke: 1px var(--color-slide-title);
     text-stroke: 1px var(--color-slide-title);
     grid-column-end: span 2;
-    height: 10vw;
+    height: 20vw;
     pointer-events: none;
 }
 
